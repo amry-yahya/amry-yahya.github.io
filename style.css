@@ -1,0 +1,114 @@
+* {
+    font-family: sans-serif;
+    background-color: rgb(60,60,60);
+    color: lightgray;
+}     
+
+.judul {
+    text-align: center;
+}
+
+.konten {
+    text-align: justify;
+    width: 55%;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.konten img{
+    margin: 50px;
+    padding: auto;
+}
+
+.tengah {
+    text-align: center;
+    display: block;
+}
+
+.kiri {
+    text-align: left;
+}
+
+/* NAVIGASI */
+    .navigasi {
+        text-align: center;
+        margin-bottom: 50px;
+        min-width: 720px;
+    }    
+
+    .navigasi a {
+        margin: 5px;
+        padding: 10px 20px;
+        background-color: rgb(60,60,60);
+        color: lightgray;
+        text-decoration: none;
+        border-radius: 20px;
+    }    
+
+    .navigasi a:hover {
+        color: rgb(60,60,60);
+        background-color: lightgray;
+    }    
+
+    #site {
+        background-color: lightgray;
+        color: rgb(60,60,60);
+    }    
+/* AKHIR NAVIGASI */    
+
+/* TABEL PROFIL */
+    .baris {
+        display: flex;
+    }
+
+    .kolom {
+        flex: 10%;
+        padding: 5px;
+    }
+
+    .kolom img {
+        width: 70px;
+    }
+/* AKHIR TABEL */
+
+/* TABEL RIWAYAT PENDIDIKAN*/
+    table,
+    td {
+        text-align: center;
+        border: 1px lightgray solid;
+        border-collapse: collapse;
+        padding: 5px 15px;
+        font-family: sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        color: lightgray;
+    }    
+
+    thead {
+        font-weight: bold;
+    }    
+
+    .nama-sekolah {
+        text-align: left;
+    }    
+
+    .row-genap td{
+        background-color:rgb(50, 50, 50);
+    }    
+/* AKHIR TABEL */    
+
+.kutipan {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 70%;
+    text-align: center;
+    
+}
+
+.pembicara {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    font-size: 25px;
+    padding-right: 100px;
+    font-style: italic;
+}
