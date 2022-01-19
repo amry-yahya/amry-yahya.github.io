@@ -1,13 +1,15 @@
-let navs = [...document.querySelectorAll('.nav-link')];
-let contents=[...document.querySelectorAll('.content')];
-navs.map(nav => nav.addEventListener('click', move));
+let navs=[...document.querySelectorAll('.nav-link')];
+let sections=[...document.querySelectorAll('section')];
+navs.map(nav=>change(nav));
 
-function move(){
-    navs.map(nav=>nav.classList.remove('active'));
-    contents.map(content=>content.classList.add("d-none"));
-    active_content=document.querySelector(`.${this.id}`);
-    console.log(active_content);
-    active_content.classList.remove("d-none");
-    this.classList.add('active');
+function change(nav) {
+    nav.addEventListener('click', activating);
 }
 
+function activating() {
+    navs.map(nav=>nav.classList.remove('active'));
+    sections.map(section=>section.classList.add('d-none'));
+    let active_section=document.querySelector(`#${this.dataset.link}`);
+    active_section.classList.remove('d-none');
+    this.classList.add('active');
+}
