@@ -5,59 +5,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amry Yahya - Beranda</title>
-    <title>Document</title>
-    <link rel="shortcut icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Amry Yahya Portofolio</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
-    <h1 class="judul">Amry Yahya Web</h1>
-    <div class="navigasi">
-        <a href="index.html" id="site">Beranda</a>
-        <a href="riwayat-pendidikan.html">Riwayat Pendidikan</a>
-        <a href="hobi.html">Hobi</a>
-        <a href="buku-favorit.html">Buku Favorit</a>
-        <a href="film-favorit.html">Film Favorit</a>
-        <a href="kutipan-favorit.html">Kutipan Favorit</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Amry Yahya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#" id="profil">Profil</a>
+                    <a class="nav-link" href="#" id="riwayat-pendidikan">Riwayat Pendidikan</a>
+                    <a class="nav-link" href="#" id="hobi">Hobi</a>
+                    <a class="nav-link" href="#" id="buku-favorit">Buku Favorit</a>
+                    <a class="nav-link" href="#" id="film-favorit">Film Favorit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profil w-50 mx-auto mt-5 content">
+        <div class="card text-center bg-dark text-light border-dark">
+            <div class="row">
+                <div class="col">
+                    <img src="resources/amry-yahya.png" class="card-img-top">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h1 class="card-title my-5">Amry Yahya</h1>
+                        <p class="card-text">Mahasiswa S1 Teknik Informatika, Universitas Brawijaya.</p>
+                        <div class="row">
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item bg-dark"> <a
+                                        href="https://www.linkedin.com/in/amry-yahya-4038401b9/" target="_blank">
+                                        <img src="resources/linkedin.png" width="50px" alt="in">
+                                    </a></li>
+                                <li class="list-group-item bg-dark"> <a href="https://instagram.com/amryyahya"
+                                        target="_blank">
+                                        <img src="resources/instagram.png" width="50px" alt="ig">
+                                    </a></li>
+                                <li class="list-group-item bg-dark py-3">
+                                    <a href="https: //www.youtube.com/channel/UCa9EH8LlQyOdb3OnzWpGzNA" target="_blank">
+                                        <img src="resources/youtube.png" width="50px" alt="yt">
+                                    </a>
+                                </li>
+                                <div class="list-group-item bg-dark">
+                                    <a href="https://www.facebook.com/amry.yahya.908" class="kolom" target="_blank">
+                                        <img src="resources/facebook.png" width="50px" alt="fb">
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="tengah">
-        <table class="profil">
+    <div class="riwayat-pendidikan w-50 mx-auto mt-5 content d-none">
+        <table class="table table-hover table-dark table-bordered">
+            <thead>
+                <tr>
+                    <td rowspan="2" class="align-middle">No.</td>
+                    <td rowspan="2" class="align-middle">Nama Sekolah</td>
+                    <td colspan="2">Tahun</td>
+                </tr>
+                <tr>
+                    <td>Masuk</td>
+                    <td>Lulus</td>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
-                    <td>
-                        <img src="amry-yahya.jpg" alt="sebuah potret" width="300" id="profil">
-                    </td>   
-                    <td>
-                        <h1>Amry Yahya</h1>
-                        <h4>Mahasiswa S1 Teknik Informatika, Universitas Brawijaya</h4>
-                        <p class="tengah">
-                            E-mail : amryyahya@student.ub.ac.id <br>
-                            <br>
-                            <strong>Media Sosial</strong> <br>
-                        </p>
-                        <div class="baris">
-                            <a href="https://www.linkedin.com/in/amry-yahya-4038401b9/" class="kolom" target="_blank">
-                                <img src="linkedin.png" alt="in">
-                            </a>
-                            <a href="https://www.facebook.com/amry.yahya.908" class="kolom" target="_blank">
-                                <img src="facebook.png" alt="fb">
-                            </a>
-                            <a href="https://instagram.com/amryyahya" class="kolom" target="_blank">
-                                <img src="instagram.png" alt="ig">
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCa9EH8LlQyOdb3OnzWpGzNA" class="kolom" target="_blank">
-                                <br>
-                                <img src="youtube.png" alt="yt">
-                            </a>
-                        </div>
-                    </td>
+                    <td>1.</td>
+                    <td>TK Dharma Wanita Macanbang</td>
+                    <td>2007</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>SDN 1 Macanbang</td>
+                    <td>2008</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>SMPN 1 Gondang</td>
+                    <td>2014</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>SMAN 1 Kedungwaru</td>
+                    <td>2017</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Universitas Brawijaya</td>
+                    <td>2020</td>
+                    <td>2024</td>
                 </tr>
             </tbody>
         </table>
     </div>
+
+    <div class="hobi mx-auto mt-5 content d-none">
+        <div class="container">
+            <h1>
+                1. Membaca
+            </h1>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Membaca merupakan sebuah aktivitas berupa melafalkan atau mengeja sebuah tulisan. Hal ini sesuai
+                        dengan yangtertuang dalam KBBI (Kamus Besar Bahasa Indonesia) yang menyatakan bahwa membaca
+                        adalah
+                        mengeja atau melafalkan apa yang tertulis. Aku suka membaca karena menyenangkan.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <img src="resources/cat-reading.gif" class="img-fluid" alt="membaca">
+                </div>
+                <div class="col">
+                    Banyak buku-buku bagus yang membuatku kagum. Aku suka buku
+                    fiksi maupun buku non-fiksi. Buku fiksi yang kusukai antara lain, Buku-buku Harry Potter karya J. K.
+                    Rowling, Sherlock Holmes karya Arthur Doyle , dan Percy Jackson karya Rick Riordan, ketiganya
+                    sama-sama
+                    bertema fantasi dan novel terjemahan. Sementara Buku fiksi Indonesia yang pernah kubaca adalah
+                    Gebetan
+                    Instan karya gari rakai sambu, beberapa buku kompilasi cerpen, dan sebuah novel tentang cinta yang
+                    telah
+                    kulupakan judulnya. Buku non-fiksi yang kusukai adalah Berani Tidak Disukai karya Ichiro Kishimi dan
+                    Fumitake Koga,
+                    Sebuah Seni untuk Bersikap Bodo Amat karya Mark Manson, dan Sapiens karya Yuval Noah Harari. Banyak
+                    buku yang
+                    telah kulupakan karena aku selalu meminjam buku-buku tersebut tanpa membelinya, sehingga kebanyakan
+                    buku
+                    hanya kubaca sekali dan cepat kulupakan.
+                    Selain membaca buku, aku juga suka membaca di internet. Aku sering baca-baca hal-hal yang berkaitan
+                    sains di internet. Aku juga suka membaca jurnal-jurnal terbaru tentang teknologi. Kadang-kadang aku
+                    juga membaca artikel-artikel yang berkaitan dengan psikologi manusia. Aku juga sering membaca
+                    berita-berita bola karena aku penggemar sepakbola.
+                </div>
+            </div>
+
+            <h1>
+                2. Nonton
+            </h1>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Selain membaca aku juga suka nonton. Entah itu film, series, anime, ataupun video youtube.
+                        Karena sangat sulit untuk mengakses film-film maupun anime-anime lawas, dulu aku sering
+                        membajaknya dari
+                        internet. Namun sekarang sudah banyak website yang menyediakan streaming anime secara legal dan
+                        langganan
+                        layanan film rumah harganya semakin murah. Aku menonton film ketika punya waktu luang. Beberapa
+                        yang kusukai antara
+                        lain, The Shawshank Redemption, The Dark Knight, Ingorious Basterds, dan film-film Mission
+                        Impossible.
+                        Untuk film Indonesia, aku menyukai film-film Ernest Prakasa, film-film Raditya Dika, dan
+                        beberapa film
+                        komedi lainnya.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img src="resources/spongebobsquarepants-tv.gif" class="img-fluid" alt="nonton">
+                </div>
+                <div class="col-9">
+                    <p>
+                        Aku juga suka menonton serial luar negeri. Serial yang paling kusukai adalah seri bertemakan
+                        kriminal yaitu Breaking Bad. Seri ini menceritakan seorang guru kimia yang menjadi peracik
+                        narkoba jenis
+                        sabu-sabu. Ia harus mencari uang sebanyak mungkin untuk kemudian diwariskan kepada keluarganya
+                        karena dia
+                        menderita kanker parah dan umurnya tidak lama lagi. Selain itu aku juga menonton seri yang
+                        sangat populer yaitu
+                        Stranger Things dan Lucifer. Stranger Things bergenre horor dan thriller sementara Lucifer
+                        bergenre
+                        komedi.Aku juga sangat menyukai anime. Banyak sekali Anime yang sudah kutonton, hampir di setiap
+                        libur
+                        semester aku menonton anime secara maraton. Terlebih lagi, sekarang banyak situs-situs yang
+                        mendistribusikan
+                        anime secara resmi dan legal. Jika memilih mana anime yang terbaik, aku tidak bisa memutuskan,
+                        karena
+                        sebagian besar anime menurutku kualitasnya sama.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Sama-sama bagus dan menghibur. Selain nonton-nonton yang bersifat rekreasi tersebut, aku juga
+                        sering
+                        nonton tutorial-tutorial
+                        dan info-info seputar dunia komputer di Youtube. Selain bermanfaat entah kenapa kegiatan
+                        tersebut
+                        cukup
+                        menyenangkan. Aku berlangganan beberapa channel tutorial programming yaitu Kelas Terbuka dan Web
+                        Programming
+                        Unpas. Selain itu banyak film-film dokumenter di Youtube yang selain menghibur juga edukatif
+                        serta
+                        tentu saja
+                        gratis.
+                    </p>
+                </div>
+            </div>
+            <h1>
+                3. Bermain Game
+            </h1>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Aku suka bermain gim, walaupun belakangan tidak bermain sesering dulu. Bermain gim bisa sangat
+                        menghibur. Saat kecil, gim yang pertama kumainkan adalah game Snake dan Space Impact yang ada di
+                        HP Nokia.
+                        Dulu, aku juga punya consol yang disebut gamebot dengan game-game yang sangat sederhana jika
+                        dibandingkan
+                        game-game jaman sekarang.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <img src="resources/timmy.gif" alt="bermain game">
+                </div>
+                <div class="col-9">
+                    <p>
+                        Sekitar kelas 3 atau 4 SD aku mulai mengenal warnet, satu jam menyewa hanya kugunakan untuk
+                        bermain gim
+                        di
+                        web games.co.id di situ ada bermacam jenis game mulai dari olahraga, memasak, perang dan
+                        seterusnya.
+                        Saat
+                        kelas 5 SD aku mulai mengenal Play Station. PS2 lah yang booming di zaman itu karena harganya
+                        yang lebih
+                        murah dibandingkan seri terbaru yaitu PS3. Setiap minggu aku pergi ke rental untuk bermain PS,
+                        kadang
+                        selama
+                        2 jam, kadang juga 3 jam. Game yang kumainkan saat bersama teman selalu gim Winning Eleven. Saat
+                        sendiri
+                        aku
+                        bermain GTA.
+                        Kemudian saat SMP, saat pertama kali aku memiliki smartphone android hingga SMA, aku suka
+                        bermain gim
+                        online
+                        seperti Clash of Clans, Mobile Legends, dan Free Fire. Gim-gim tersebut, walaupun sangat
+                        mengasyikkan,
+                        tetapi sangat menyita banyak waktu. Saat bermain gim-gim tersebut, tak terasa 6-8 jam telah
+                        berlalu.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Hal
+                        itulah yang membuatku merasa bersalah, tugas-tugas sekolah terbengkalai, kerjaan rumah ga
+                        dikerjain,
+                        bahkan
+                        melakukan hal rekreatif lain pun jadi tidak punya waktu. Aku juga menjadi malas belajar di
+                        masa-masa
+                        itu.
+                        Akhirnya aku memutuskan untuk tidak lagi bermain gim online yang sifatnya kompetitif. Saat ini,
+                        gim yang
+                        aku
+                        mainkan bertemakan role playing game, bernama Granblue Fantasy, di mana banyak cerita di dalam
+                        game itu
+                        dan
+                        pemain menjadi salah satu karakternya.
+                    </p>
+                </div>
+            </div>
+            <p>
+            </p>
+        </div>
+    </div>
+
+<div class="buku-favorit mx-auto mt-5 content d-none">
+    <h1>coming soon...</h1>
+</div>
+
+<div class="film-favorit mx-auto mt-5 content d-none">
+    <h1>coming soon...</h1>
+</div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
